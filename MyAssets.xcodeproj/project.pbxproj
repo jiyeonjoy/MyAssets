@@ -12,6 +12,10 @@
 		2702ECCA28FFF7E600DA63C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2702ECC928FFF7E600DA63C0 /* Assets.xcassets */; };
 		2702ECCD28FFF7E600DA63C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2702ECCC28FFF7E600DA63C0 /* Preview Assets.xcassets */; };
 		275665D6292C991A004A1018 /* NavigationBarWithButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275665D5292C991A004A1018 /* NavigationBarWithButton.swift */; };
+		27F0A805292DFC9A005051AA /* AssetMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0A804292DFC9A005051AA /* AssetMenu.swift */; };
+		27F0A80A292E0D71005051AA /* AssetMenuGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0A809292E0D71005051AA /* AssetMenuGridView.swift */; };
+		27F0A80D292E0DAB005051AA /* AssetMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0A80C292E0DAB005051AA /* AssetMenuButtonStyle.swift */; };
+		27F0A80F292E0DD8005051AA /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0A80E292E0DD8005051AA /* AssetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		2702ECCC28FFF7E600DA63C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2702ECD328FFFA1E00DA63C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		275665D5292C991A004A1018 /* NavigationBarWithButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarWithButton.swift; sourceTree = "<group>"; };
+		27F0A804292DFC9A005051AA /* AssetMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenu.swift; sourceTree = "<group>"; };
+		27F0A809292E0D71005051AA /* AssetMenuGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuGridView.swift; sourceTree = "<group>"; };
+		27F0A80C292E0DAB005051AA /* AssetMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetMenuButtonStyle.swift; sourceTree = "<group>"; };
+		27F0A80E292E0DD8005051AA /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +83,45 @@
 		275665D4292C98EA004A1018 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
-				275665D5292C991A004A1018 /* NavigationBarWithButton.swift */,
+				27F0A806292E0D18005051AA /* SubComponents */,
+				27F0A804292DFC9A005051AA /* AssetMenu.swift */,
+				27F0A80E292E0DD8005051AA /* AssetView.swift */,
 			);
 			path = Asset;
+			sourceTree = "<group>";
+		};
+		27F0A806292E0D18005051AA /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				27F0A808292E0D53005051AA /* MenuGridView */,
+				27F0A807292E0D2E005051AA /* NavigationBar */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		27F0A807292E0D2E005051AA /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				275665D5292C991A004A1018 /* NavigationBarWithButton.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		27F0A808292E0D53005051AA /* MenuGridView */ = {
+			isa = PBXGroup;
+			children = (
+				27F0A80B292E0D8C005051AA /* SubComponents */,
+				27F0A809292E0D71005051AA /* AssetMenuGridView.swift */,
+			);
+			path = MenuGridView;
+			sourceTree = "<group>";
+		};
+		27F0A80B292E0D8C005051AA /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				27F0A80C292E0DAB005051AA /* AssetMenuButtonStyle.swift */,
+			);
+			path = SubComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F0A80A292E0D71005051AA /* AssetMenuGridView.swift in Sources */,
 				275665D6292C991A004A1018 /* NavigationBarWithButton.swift in Sources */,
+				27F0A80F292E0DD8005051AA /* AssetView.swift in Sources */,
 				2702ECC828FFF7E500DA63C0 /* ContentView.swift in Sources */,
 				2702ECC628FFF7E500DA63C0 /* MyAssetsApp.swift in Sources */,
+				27F0A805292DFC9A005051AA /* AssetMenu.swift in Sources */,
+				27F0A80D292E0DAB005051AA /* AssetMenuButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
